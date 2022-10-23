@@ -160,7 +160,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtEdad" />
 
     <ImageButton
-        android:id="@+id/imbBtnViaje"
+        android:id="@+id/imgBtnMiCuenta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="61dp"
@@ -170,13 +170,13 @@
         app:srcCompat="@drawable/micuenta" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/imgBtnViaje"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="59dp"
         android:layout_marginEnd="204dp"
-        app:layout_constraintEnd_toStartOf="@+id/imbBtnViaje"
+        app:layout_constraintEnd_toStartOf="@+id/imgBtnMiCuenta"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnGuardarPassengerRegistry"
         app:srcCompat="@drawable/viaje" />
@@ -191,7 +191,7 @@
         android:text="@string/lblViaje"
         app:layout_constraintEnd_toStartOf="@+id/lblCuentaPassengerRegistry"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnViaje" />
 
     <TextView
         android:id="@+id/lblCuentaPassengerRegistry"
@@ -201,6 +201,6 @@
         android:layout_marginEnd="46dp"
         android:text="@string/lblMiCuenta"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imbBtnViaje" />
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnMiCuenta" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
