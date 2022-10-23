@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">AppBusCar</string>
+    <string name="lblLogin">Iniciar sesión</string>
+    <string name="lblForgotPasswd">Olvidé mi contraseña</string>
+    <string name="lblNew">Eres nuevo?</string>
+    <string name="lblCondiciones">Al ingresar estás aceptando los \n        Términos y condiciones</string>
+
+    <string name="txtCorreo">Correo</string>
+    <string name="txtPassword">Contraseña</string>
+
+    <string name="btnIngresar">INGRESAR</string>
+    <string name="btnCrear">CREA TU CUENTA</string>
 </resources>
