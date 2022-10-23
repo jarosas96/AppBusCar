@@ -7,6 +7,8 @@
     <string name="lblPassengerRegistry">Registro Pasajero</string>
     <string name="lblViaje">Viaje</string>
     <string name="lblMiCuenta">Mi cuenta</string>
+    <string name="lblTravelTicket">Boletos de Viaje</string>
+    <string name="lblBoletosViaje">Histórico de boletos de viaje adquiridos:</string>
 
     <string name="txtCorreo">Correo</string>
     <string name="txtPassword">Contraseña</string>
