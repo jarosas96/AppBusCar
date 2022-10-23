@@ -12,10 +12,14 @@
     <string name="lblPassengerInfo">Datos del Pasajero</string>
     <string name="lblBoletoViaje">Boleto de viaje: </string>
     <string name="lblOrigenViaje">Origen: </string>
-    <string name="lblDestinoViaje">Destino:</string>
+    <string name="lblDestinoViaje">Destino: </string>
     <string name="lblNasiento">N° Asiento: </string>
     <string name="lblHoraSalida">Hora de Salida: </string>
     <string name="lblFechaSalida">Fecha de Salida: </string>
+    <string name="lblBuyTicketTravel">Compra de Boleto \n          de viaje</string>
+    <string name="lblSeleccionar">Seleccionar</string>
+    <string name="lblIda">Ida: </string>
+    <string name="lblVuelta">Vuelta: </string>
 
     <string name="txtCorreo">Correo</string>
     <string name="txtPassword">Contraseña</string>
@@ -32,14 +36,37 @@
     <string name="btnGuardar">Guardar</string>
     <string name="btnCancelar">Cancelar</string>
     <string name="btnSalir">Salir</string>
+    <string name="btnBuscarBuses">BUSCAR BUSES</string>
+
+    <string name="chbRetorno">Añadir retorno</string>
 
     <string name="spnIdc">Tipo de documento</string>
+
+     <!--Sprinners-->
 
     <string-array name="idc_array">
         <item>Tipo de documento</item>
         <item>DNI</item>
         <item>Carnet de Estranjería</item>
         <item>Pasaporte</item>
+    </string-array>
+
+    <string-array name="origen_array">
+        <item>Origen</item>
+        <item>Huaraz</item>
+        <item>Cuzco</item>
+        <item>Cajamarca</item>
+        <item>Lima</item>
+        <item>Arequipa</item>
+    </string-array>
+
+    <string-array name="destino_array">
+        <item>Destino</item>
+        <item>Huaraz</item>
+        <item>Cuzco</item>
+        <item>Cajamarca</item>
+        <item>Lima</item>
+        <item>Arequipa</item>
     </string-array>
 
 </resources>

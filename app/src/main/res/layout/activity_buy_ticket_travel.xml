@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuyTIcketTravelActivity">
+
+    <RelativeLayout
+        android:id="@+id/ctnBuyTicketTravel"
+        android:layout_width="410dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="#2E2929"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/lblBuyTicketTravel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/lblBuyTicketTravel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lblSeleccionar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="322dp"
+        android:text="@string/lblSeleccionar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ctnBuyTicketTravel" />
+
+    <Spinner
+        android:id="@+id/spnOrigen"
+        android:layout_width="184dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="16dp"
+        android:entries="@array/origen_array"
+        app:layout_constraintEnd_toStartOf="@+id/spnDestino"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ctnBuyTicketTravel" />
+
+    <Spinner
+        android:id="@+id/spnDestino"
+        android:layout_width="179dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="16dp"
+        android:entries="@array/destino_array"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ctnBuyTicketTravel" />
+
+    <TextView
+        android:id="@+id/lblIda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="58dp"
+        android:text="@string/lblIda"
+        app:layout_constraintEnd_toStartOf="@+id/txtDatePicketIda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnOrigen" />
+
+    <ImageView
+        android:id="@+id/imgDateIda"
+        android:layout_width="53dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="155dp"
+        android:layout_marginEnd="31dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ctnBuyTicketTravel"
+        app:srcCompat="@drawable/dateicon" />
+
+    <EditText
+        android:id="@+id/txtDatePicketIda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="149dp"
+        android:layout_marginEnd="17dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintEnd_toStartOf="@+id/imgDateIda"
+        app:layout_constraintTop_toBottomOf="@+id/ctnBuyTicketTravel" />
+
+    <CheckBox
+        android:id="@+id/checkbox_meat"
+        android:layout_width="141dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="213dp"
+        android:layout_marginEnd="252dp"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/chbRetorno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ctnBuyTicketTravel" />
+
+
+    <TextView
+        android:id="@+id/lblVuelta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/lblVuelta"
+        app:layout_constraintEnd_toStartOf="@+id/txtDatePicketVuelta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_meat" />
+
+    <ImageView
+        android:id="@+id/imgDateVuelta"
+        android:layout_width="53dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="272dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ctnBuyTicketTravel"
+        app:srcCompat="@drawable/dateicon" />
+
+    <EditText
+        android:id="@+id/txtDatePicketVuelta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="264dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintEnd_toStartOf="@+id/imgDateVuelta"
+        app:layout_constraintTop_toBottomOf="@+id/ctnBuyTicketTravel" />
+
+
+    <Button
+        android:id="@+id/btnBuscarBuses"
+        android:layout_width="363dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#11615A"
+        android:text="@string/btnBuscarBuses"
+        app:layout_constraintTop_toBottomOf="@+id/txtDatePicketVuelta"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <Button
+        android:id="@+id/btnCancelarPassengerRegistry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#11615A"
+        android:text="@string/btnCancelar"
+        tools:layout_editor_absoluteX="265dp"
+        tools:layout_editor_absoluteY="523dp" />
+
+    <Button
+        android:id="@+id/btnGuardarCompra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="128dp"
+        android:backgroundTint="#11615A"
+        android:text="@string/btnGuardar"
+        app:layout_constraintEnd_toStartOf="@+id/btnCancelarPassengerRegistry"
+        app:layout_constraintTop_toBottomOf="@+id/btnBuscarBuses" />
+
+    <ImageButton
+        android:id="@+id/imgBtnMiCuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="33dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCancelarPassengerRegistry"
+        app:srcCompat="@drawable/micuenta" />
+
+    <ImageButton
+        android:id="@+id/imgBtnViaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="204dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgBtnMiCuenta"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGuardarCompra"
+        app:srcCompat="@drawable/viaje" />
+
+    <TextView
+        android:id="@+id/lblViajePassengerRegistry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="220dp"
+        android:text="@string/lblViaje"
+        app:layout_constraintEnd_toStartOf="@+id/lblCuentaPassengerRegistry"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnViaje" />
+
+    <TextView
+        android:id="@+id/lblCuentaPassengerRegistry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="46dp"
+        android:text="@string/lblMiCuenta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnMiCuenta" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
