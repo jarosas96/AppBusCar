@@ -147,20 +147,25 @@
         android:id="@+id/btnBuscarBuses"
         android:layout_width="363dp"
         android:layout_height="52dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="52dp"
+        android:layout_marginEnd="24dp"
         android:backgroundTint="#11615A"
         android:text="@string/btnBuscarBuses"
-        app:layout_constraintTop_toBottomOf="@+id/txtDatePicketVuelta"
-        tools:layout_editor_absoluteX="24dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDatePicketVuelta" />
 
     <Button
         android:id="@+id/btnCancelarPassengerRegistry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
         android:backgroundTint="#11615A"
         android:text="@string/btnCancelar"
-        tools:layout_editor_absoluteX="265dp"
-        tools:layout_editor_absoluteY="523dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBuscarBuses" />
 
     <Button
         android:id="@+id/btnGuardarCompra"
