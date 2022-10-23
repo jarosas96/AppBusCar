@@ -4,10 +4,32 @@
     <string name="lblForgotPasswd">Olvidé mi contraseña</string>
     <string name="lblNew">Eres nuevo?</string>
     <string name="lblCondiciones">Al ingresar estás aceptando los \n        Términos y condiciones</string>
+    <string name="lblPassengerRegistry">Registro Pasajero</string>
+    <string name="lblViaje">Viaje</string>
+    <string name="lblMiCuenta">Mi cuenta</string>
 
     <string name="txtCorreo">Correo</string>
     <string name="txtPassword">Contraseña</string>
+    <string name="txtIdc">N° Documento</string>
+    <string name="txtNombres">Nombres</string>
+    <string name="txtApellidoP">Apellido Paterno</string>
+    <string name="txtApellidoM">Apellido Materno</string>
+    <string name="txtEmail">E-mail</string>
+    <string name="txtTelefono">Teléfono</string>
+    <string name="txtEdad">Edad</string>
 
     <string name="btnIngresar">INGRESAR</string>
     <string name="btnCrear">CREA TU CUENTA</string>
+    <string name="btnGuardar">Guardar</string>
+    <string name="btnCancelar">Cancelar</string>
+
+    <string name="spnIdc">Tipo de documento</string>
+
+    <string-array name="idc_array">
+        <item>Tipo de documento</item>
+        <item>DNI</item>
+        <item>Carnet de Estranjería</item>
+        <item>Pasaporte</item>
+    </string-array>
+
 </resources>

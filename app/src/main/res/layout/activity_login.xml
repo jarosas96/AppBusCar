@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="@+id/ctnLogin"
         app:srcCompat="@drawable/login" />
 
-    <HorizontalScrollView
+    <RelativeLayout
         android:id="@+id/ctnLogin"
         android:layout_width="410dp"
         android:layout_height="90dp"
@@ -40,10 +40,10 @@
             android:text="@string/lblLogin"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             android:textColor="#FFFFFF" />
-    </HorizontalScrollView>
+    </RelativeLayout>
 
     <EditText
-        android:id="@+id/txtEmail"
+        android:id="@+id/txtCorreo"
         android:layout_width="373dp"
         android:layout_height="45dp"
         android:layout_marginStart="18dp"
@@ -68,7 +68,7 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/txtEmail" />
+        app:layout_constraintTop_toTopOf="@+id/txtCorreo" />
 
     <TextView
         android:id="@+id/lblForgotPasswd"
@@ -117,8 +117,8 @@
         android:layout_marginTop="45dp"
         android:layout_marginEnd="20dp"
         android:backgroundTint="#B7C3C2"
-        android:text="@string/btnCrear"
         android:textColor="#141515"
+        android:text="@string/btnCrear"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/lblNew" />
