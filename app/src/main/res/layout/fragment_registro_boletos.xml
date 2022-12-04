@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnBuscarBuses"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.RegistroBoletosFragment">
+
+
+    <TextView
+        android:id="@+id/lblRuta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="60dp"
+        android:text="Ruta: "
+        app:layout_constraintEnd_toStartOf="@+id/spnRuta"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spnRuta"
+        android:layout_width="163dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="44dp"
+        android:ems="10"
+        android:inputType="time"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblFlota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="90dp"
+        android:text="Flota: "
+        app:layout_constraintEnd_toStartOf="@+id/spnFlota"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lblRuta" />
+
+    <Spinner
+        android:id="@+id/spnFlota"
+        android:layout_width="163dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="time"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.822"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnRuta" />
+
+    <TextView
+        android:id="@+id/lblHorario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="90dp"
+        android:text="Horario: "
+        app:layout_constraintEnd_toStartOf="@+id/spnHoraSalida"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblFlota" />
+
+    <Spinner
+        android:id="@+id/spnHoraSalida"
+        android:layout_width="163dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="time"
+        android:textSize="12sp"
+        android:entries="@array/hora_salida"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.822"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnFlota" />
+
+    <Button
+        android:id="@+id/btnGuardarRegistroBoleta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="96dp"
+        android:backgroundTint="#11615A"
+        android:text="@string/btnGuardar"
+        app:layout_constraintEnd_toStartOf="@+id/btnCancelarRegistroBoleta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblHorario" />
+
+    <Button
+        android:id="@+id/btnCancelarRegistroBoleta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="52dp"
+        android:backgroundTint="#11615A"
+        android:text="@string/btnCancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnHoraSalida" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

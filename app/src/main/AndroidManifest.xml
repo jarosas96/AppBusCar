@@ -13,28 +13,21 @@
         android:theme="@style/Theme.AppBusCar"
         tools:targetApi="31">
         <activity
-            android:name=".BuyTIcketTravelActivity"
+            android:name=".PasajeroRegistroActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MenuPassengerActivity"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".PassengerInfoActivity"
-            android:exported="true">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".TravelTicketsListActivity"
-            android:exported="true">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".PassengerRegistryActivity"
+            android:name=".MenuAdminActivity"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"

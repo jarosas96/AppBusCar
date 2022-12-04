@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.RegistroPasajeroFragment">
+
+    <Spinner
+        android:id="@+id/spnIdc"
+        android:layout_width="173dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:entries="@array/idc_array"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtDocumento"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/txtIdc"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spnIdc"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNames"
+        android:layout_width="371dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:hint="@string/txtNombres"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtFatherLastName"
+        android:layout_width="371dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="@string/txtApellidoP"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNames" />
+
+    <EditText
+        android:id="@+id/txtMotherLastName"
+        android:layout_width="371dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/txtApellidoM"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFatherLastName" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="371dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/txtEmail"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMotherLastName" />
+
+    <EditText
+        android:id="@+id/txtTelefono"
+        android:layout_width="371dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:hint="@string/txtTelefono"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+    <EditText
+        android:id="@+id/txtEdad"
+        android:layout_width="371dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/txtEdad"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTelefono" />
+
+    <Spinner
+        android:id="@+id/spnSexo"
+        android:layout_width="371dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="372dp"
+        android:entries="@array/sexo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnGuardarPasajero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="72dp"
+        android:backgroundTint="#11615A"
+        android:text="@string/btnGuardar"
+        app:layout_constraintEnd_toStartOf="@+id/btnCancelarRegistroPasajero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtContraseña" />
+
+    <Button
+        android:id="@+id/btnCancelarRegistroPasajero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="56dp"
+        android:backgroundTint="#11615A"
+        android:text="@string/btnCancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtContraseña" />
+
+    <EditText
+        android:id="@+id/txtContraseña"
+        android:layout_width="371dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="@string/txtPassword"
+        android:inputType="textPassword"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnSexo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,7 +5,6 @@
     <string name="lblNew">Eres nuevo?</string>
     <string name="lblCondiciones">Al ingresar estás aceptando los \n        Términos y condiciones</string>
     <string name="lblPassengerRegistry">Registro Pasajero</string>
-    <string name="lblViaje">Viaje</string>
     <string name="lblMiCuenta">Mi cuenta</string>
     <string name="lblTravelTicket">Boletos de Viaje</string>
     <string name="lblBoletosViaje">Histórico de boletos de viaje adquiridos:</string>
@@ -15,11 +14,25 @@
     <string name="lblDestinoViaje">Destino: </string>
     <string name="lblNasiento">N° Asiento: </string>
     <string name="lblHoraSalida">Hora de Salida: </string>
+    <string name="lblHoraLlegada">Hora de Llegada: </string>
     <string name="lblFechaSalida">Fecha de Salida: </string>
     <string name="lblBuyTicketTravel">Compra de Boleto \n          de viaje</string>
     <string name="lblSeleccionar">Seleccionar</string>
     <string name="lblIda">Ida: </string>
     <string name="lblVuelta">Vuelta: </string>
+    <string name="lblViaje">Reservar Viaje</string>
+    <string name="lblVerPeril">Ver Perfil</string>
+    <string name="lblCerrarSesion">Cerrar sesión</string>
+    <string name="lblRegistroRutas">Registro de Rutas</string>
+    <string name="lblRegistroPasajero">Registro de Pasajero</string>
+    <string name="lblRegistroFlota">Registro de Flota</string>
+    <string name="lblRegistroBoletos">Registro de Boletos de Viaje</string>
+    <string name="lblRegistroViaje">Registro de viaje</string>
+    <string name="lblFecIni">Fecha inicio</string>
+    <string name="lblFecFin">Fecha fin</string>
+    <string name="lblInicio">Inicio</string>
+    <string name="lblConsultaBoletos">Mis Boletos de viaje</string>
+    <string name="lblAsientosLibres">asientos libres</string>
 
     <string name="txtCorreo">Correo</string>
     <string name="txtPassword">Contraseña</string>
@@ -30,6 +43,17 @@
     <string name="txtEmail">E-mail</string>
     <string name="txtTelefono">Teléfono</string>
     <string name="txtEdad">Edad</string>
+    <string name="txtAsiento">N° Asiento</string>
+    <string name="txtPlaca">N° Placa</string>
+    <string name="txtMarca">Marca</string>
+    <string name="txtModelo">Modelo</string>
+    <string name="txtAsientos">N° Asientos</string>
+    <string name="txtPoliza">N° Poliza</string>
+    <string name="txtAñoFabrizacion">Año de fabricación</string>
+    <string name="txtCostoTramo">Costo del tramo</string>
+    <string name="txtDescription">Descripción de flota</string>
+    <string name="txtFecha">dd / mm / yyyy</string>
+    <string name="txtRuta">Nombre de Ruta</string>
 
     <string name="btnIngresar">INGRESAR</string>
     <string name="btnCrear">CREA TU CUENTA</string>
@@ -37,18 +61,30 @@
     <string name="btnCancelar">Cancelar</string>
     <string name="btnSalir">Salir</string>
     <string name="btnBuscarBuses">BUSCAR BUSES</string>
+    <string name="btnBuscarViajes">BUSCAR VIAJES</string>
 
     <string name="chbRetorno">Añadir retorno</string>
 
     <string name="spnIdc">Tipo de documento</string>
+    <string name="spnSexo">Sexo</string>
+    <string name="spnEstado">Estado</string>
+    <string name="spnHoraSalida">Hora Salida</string>
+    <string name="spnHoraLlegada">Hora Llegada</string>
 
-     <!--Sprinners-->
+    <!--Sprinners-->
 
     <string-array name="idc_array">
-        <item>Tipo de documento</item>
         <item>DNI</item>
         <item>Carnet de Estranjería</item>
         <item>Pasaporte</item>
+    </string-array>
+
+    <string-array name="flota">
+        <item>Flota</item>
+        <item>Cruz del Sur</item>
+        <item>Huaraz</item>
+        <item>Cuzco</item>
+        <item>Cajamarca</item>
     </string-array>
 
     <string-array name="origen_array">
@@ -68,5 +104,38 @@
         <item>Lima</item>
         <item>Arequipa</item>
     </string-array>
+
+    <string-array name="hora_salida">
+        <item>Hora Salida</item>
+        <item>10:00 a.m</item>
+        <item>12:00 a.m</item>
+        <item>02:00 p.m</item>
+        <item>04:00 p.m</item>
+        <item>06:00 p.m</item>
+        <item>08:00 p.m</item>
+    </string-array>
+
+    <string-array name="hora_llegada">
+        <item>Hora Llegada</item>
+        <item>10:00 a.m</item>
+        <item>12:00 a.m</item>
+        <item>02:00 p.m</item>
+        <item>04:00 p.m</item>
+        <item>06:00 p.m</item>
+        <item>08:00 p.m</item>
+    </string-array>
+
+    <string-array name="sexo">
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
+
+    <string-array name="estado">
+        <item>Activo</item>
+        <item>Inactivo</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

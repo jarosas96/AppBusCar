@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.RegistroRutasFragment">
+
+
+    <Spinner
+        android:id="@+id/spnOrigen"
+        android:layout_width="173dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:entries="@array/origen_array"
+        app:layout_constraintBottom_toTopOf="@+id/txtCostoTramo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.857" />
+
+    <Spinner
+        android:id="@+id/spnDestino"
+        android:layout_width="178dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:entries="@array/destino_array"
+        app:layout_constraintBottom_toTopOf="@+id/txtCostoTramo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.857" />
+
+    <Button
+        android:id="@+id/btnGuardarRegistroRutas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="54dp"
+        android:backgroundTint="#11615A"
+        android:text="@string/btnGuardar"
+        app:layout_constraintEnd_toStartOf="@+id/btnCancelarRegistroRutas"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreRuta" />
+
+    <Button
+        android:id="@+id/btnCancelarRegistroRutas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="56dp"
+        android:backgroundTint="#11615A"
+        android:text="@string/btnCancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreRuta" />
+
+    <EditText
+        android:id="@+id/txtCostoTramo"
+        android:layout_width="371dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="@string/txtCostoTramo"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblFecIni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/lblFecIni"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCostoTramo" />
+
+    <EditText
+        android:id="@+id/fecIni"
+        android:layout_width="241dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:gravity="center"
+        android:hint="@string/txtFecha"
+        android:inputType="date"
+        android:maxLines="1"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/lblFecIni"
+        app:layout_constraintTop_toBottomOf="@+id/txtCostoTramo" />
+
+    <EditText
+        android:id="@+id/fecFin"
+        android:layout_width="241dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:gravity="center"
+        android:hint="@string/txtFecha"
+        android:inputType="date"
+        android:maxLines="1"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblFecFin"
+        app:layout_constraintTop_toBottomOf="@+id/fecIni" />
+
+    <TextView
+        android:id="@+id/lblFecFin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/lblFecFin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblFecIni" />
+
+    <EditText
+        android:id="@+id/txtNombreRuta"
+        android:layout_width="371dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="@string/txtRuta"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fecFin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
